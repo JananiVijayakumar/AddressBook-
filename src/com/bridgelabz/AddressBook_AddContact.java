@@ -40,6 +40,21 @@ public class AddressBook_AddContact {
         man1.add(book1);
     }
 
+    //Editing Contact
+    public static void editContact(){
+        System.out.println("Welcome to edit Address Book Program");
+        System.out.println("Enter Name for Confirmation : ");
+        String name = sc.nextLine();
+        for (int i =0; i<man1.size(); i++){
+            if(man1.get(i).getFirstName().equalsIgnoreCase(name)){
+                man1.remove(i);
+                addContact();
+                System.out.println("Successfully Edit Data");
+            }else {
+                System.out.println("No Data Found in Address Book");
+            }
+        }
+    }
 
     public static void main(String[] args) {
         AddressBook_Contact book = new AddressBook_Contact();
@@ -47,6 +62,7 @@ public class AddressBook_AddContact {
         System.out.println("Welcome to Address Book Program");
         System.out.println("1: Add a new Contact to AddressBook");
         addContact();
+        editContact();
 
         //printing AddinBook class book1 objet method call
         AddressBook_AddContact addressbook = new AddressBook_AddContact();
