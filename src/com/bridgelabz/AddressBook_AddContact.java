@@ -1,5 +1,7 @@
 package com.bridgelabz;
 
+
+
 import java.util.*;
 
 public class AddressBook_AddContact {
@@ -33,7 +35,7 @@ public class AddressBook_AddContact {
         String zIp = sc.nextLine();
         book1.setZip(zIp);
 
-        System.out.print("Enter Sate : ");
+        System.out.print("Enter State : ");
         String state = sc.nextLine();
         book1.setState(state);
 
@@ -56,6 +58,7 @@ public class AddressBook_AddContact {
         }
     }
 
+
     public static void main(String[] args) {
         AddressBook_Contact book = new AddressBook_Contact();
 
@@ -63,6 +66,7 @@ public class AddressBook_AddContact {
         System.out.println("1: Add a new Contact to AddressBook");
         addContact();
         editContact();
+        deleteContact();
 
         //printing AddinBook class book1 objet method call
         AddressBook_AddContact addressbook = new AddressBook_AddContact();
@@ -72,4 +76,9 @@ public class AddressBook_AddContact {
 
 
     }
+
+    private static void deleteContact() {
+
+    }
+
 }

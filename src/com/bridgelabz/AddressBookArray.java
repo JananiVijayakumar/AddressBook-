@@ -8,17 +8,6 @@ public class AddressBookArray {
         public AddressBookArrayElement(){
             super();
         }
-        /**
-         * This is a parameterized constructor having the given parameters.
-         *
-         * @param fN
-         * @param lN
-         * @param city
-         * @param state
-         * @param zIp
-         * @param cell
-         * @param eId
-         */
 
         public AddressBookArrayElement(String fN, String lN, String eId, String cell, String city, String zIp, String state) {
             super(fN, lN, eId, cell, city, zIp, state);
@@ -26,10 +15,7 @@ public class AddressBookArray {
         public void insertContact(AddressBookArrayElement contactDetailsobj){
             contactList.add(contactDetailsobj);
         }
-        /**
-         * This Editcontact method will take the firstname as a parameter and according to that it will edit the data.
-         * @param nameToEdit
-         */
+
         public void editContact(String nameToEdit){
             for(AddressBook_Contact editContact: contactList) {
                 if (editContact.getFirstName().equalsIgnoreCase(nameToEdit)) {
@@ -67,10 +53,7 @@ public class AddressBookArray {
                 }
             }
         }
-        /**
-         * Here i have added delete method which will delete the data comparing to the firstname.
-         * @param nameToDelete
-         */
+
         public  void delete(String nameToDelete){
             for (int i=0; i<contactList.size(); i++){
                 if (contactList.get(i).getFirstName().equals(nameToDelete)){
