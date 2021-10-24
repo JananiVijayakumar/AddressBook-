@@ -49,8 +49,8 @@ public class AddressBook_AddContact {
         addContact();
 
         //printing AddinBook class book1 objet method call
-        AddressBook_AddContact AB = new AddressBook_AddContact();
-        AB.addContact();
+        AddressBook_AddContact addressbook = new AddressBook_AddContact();
+        addressbook.addContact();
         System.out.println("Updated Succfully!!!!");
 
 
